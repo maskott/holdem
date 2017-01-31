@@ -1,0 +1,135 @@
+body {
+	background: #060;
+	color: #000;
+}
+#mainFrame {
+	margin: 50px 100px;
+	padding: 0px 25px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	background: #FFF;
+	border: 2px solid #000;
+}
+
+#mainFrame H3 {
+	clear: both;
+}
+.clear {
+	clear: both;
+}
+.border2 {
+	border: 2px solid #000;
+}
+.caption {
+	margin: 10px;
+	font-style: italic;
+}
+
+UL.bets, UL.suits, UL.hand {
+	list-style: none;
+}
+UL.bets LI, UL.suits LI {
+	position: relative;
+	float: left;
+	margin-right: 10px;
+}
+UL.hand LI {
+	position: relative;
+	float: left;
+}
+
+.c10, .c20, .c50, .c100, .c500, .sS, .sC, .sH, .sD, 
+.SA, .S2, .S3, .S4, .S5, .S6, .S7, .S8, .S9, .S0, .SJ, .SQ, .SK,
+.CA, .C2, .C3, .C4, .C5, .C6, .C7, .C8, .C9, .C0, .CJ, .CQ, .CK, 
+.HA, .H2, .H3, .H4, .H5, .H6, .H7, .H8, .H9, .H0, .HJ, .HQ, .HK, 
+.DA, .D2, .D3, .D4, .D5, .D6, .D7, .D8, .D9, .D0, .DJ, .DQ, .DK, .BB, .BR {
+	position: relative;
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-image: url('sprite.gif');
+}
+.c10 span, .c20 span, .c50 span, .c100 span, .c500 span, .sS span, .sC span, .sH span, .sD span {
+	display: none;
+}
+.c10 {background-position: 0px 0px;}
+.c20 {background-position: 0px -40px;}
+.c50 {background-position: 0px -80px;}
+.c100 {background-position: 0px -120px;}
+.c500 {background-position: 0px -160px;}
+.c10:hover {background-position: -40px 0px;}
+.c20:hover {background-position: -40px -40px;}
+.c50:hover {background-position: -40px -80px;}
+.c100:hover {background-position: -40px -120px;}
+.c500:hover {background-position: -40px -160px;}
+.c10:active {background-position: -120px 0px;}
+.c20:active {background-position: -120px -40px;}
+.c50:active {background-position: -120px -80px;}
+.c100:active {background-position: -120px -120px;}
+.c500:active {background-position: -120px -160px;}
+.sS {background-position: -160px 0px;}
+.sC {background-position: -160px -40px;}
+.sH {background-position: -160px -80px;}
+.sD {background-position: -160px -120px;}
+.sS:hover {background-position: -200px 0px;}
+.sC:hover {background-position: -200px -40px;}
+.sH:hover {background-position: -200px -80px;}
+.sD:hover {background-position: -200px -120px;}
+
+.SA {background-position: -240px 0px;}
+.S2 {background-position: -280px 0px;}
+.S3 {background-position: -320px 0px;}
+.S4 {background-position: -360px 0px;}
+.S5 {background-position: -400px 0px;}
+.S6 {background-position: -440px 0px;}
+.S7 {background-position: -480px 0px;}
+.S8 {background-position: -520px 0px;}
+.S9 {background-position: -560px 0px;}
+.S0 {background-position: -600px 0px;}
+.SJ {background-position: -640px 0px;}
+.SQ {background-position: -680px 0px;}
+.SK {background-position: -720px 0px;}
+
+.CA {background-position: -240px -40px;}
+.C2 {background-position: -280px -40px;}
+.C3 {background-position: -320px -40px;}
+.C4 {background-position: -360px -40px;}
+.C5 {background-position: -400px -40px;}
+.C6 {background-position: -440px -40px;}
+.C7 {background-position: -480px -40px;}
+.C8 {background-position: -520px -40px;}
+.C9 {background-position: -560px -40px;}
+.C0 {background-position: -600px -40px;}
+.CJ {background-position: -640px -40px;}
+.CQ {background-position: -680px -40px;}
+.CK {background-position: -720px -40px;}
+
+.HA {background-position: -240px -80px;}
+.H2 {background-position: -280px -80px;}
+.H3 {background-position: -320px -80px;}
+.H4 {background-position: -360px -80px;}
+.H5 {background-position: -400px -80px;}
+.H6 {background-position: -440px -80px;}
+.H7 {background-position: -480px -80px;}
+.H8 {background-position: -520px -80px;}
+.H9 {background-position: -560px -80px;}
+.H0 {background-position: -600px -80px;}
+.HJ {background-position: -640px -80px;}
+.HQ {background-position: -680px -80px;}
+.HK {background-position: -720px -80px;}
+
+.DA {background-position: -240px -120px;}
+.D2 {background-position: -280px -120px;}
+.D3 {background-position: -320px -120px;}
+.D4 {background-position: -360px -120px;}
+.D5 {background-position: -400px -120px;}
+.D6 {background-position: -440px -120px;}
+.D7 {background-position: -480px -120px;}
+.D8 {background-position: -520px -120px;}
+.D9 {background-position: -560px -120px;}
+.D0 {background-position: -600px -120px;}
+.DJ {background-position: -640px -120px;}
+.DQ {background-position: -680px -120px;}
+.DK {background-position: -720px -120px;}
+
+.BR {background-position: -240px -160px;}
+.BB {background-position: -280px -160px;}
